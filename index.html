@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="box">
+        <span></span>
+        <h2>PRATIK</h2>
+    </div>
+    <script>
+        const name = prompt("Enter your name");
+        document.querySelector('h2').remove();;
+        // h2.innerText= name;
+        const newH2 = document.createElement('h2');
+        newH2.innerText = name;
+        const yo=document.querySelector('span')
+        yo.after(newH2);
+        const div= document.querySelector('body');
+        const randomColor = () => {
+            return Math.floor(Math.random() * 255);
+        }
+
+        div.addEventListener('click',() =>
+        {
+            // div.style.backgroundColor= 'rgb('+randomColor()+','+randomColor()+','+randomColor()+')';
+            div.style.background= `linear-gradient(to right,rgba(${randomColor()},${randomColor()},${randomColor()}),transparent,rgba(${randomColor()},${randomColor()},${randomColor()}))`;
+            // div.style.background=  `linear-gradient(to right,#00ccff,transparent,#d400d4)`;
+        })
+    </script>
+</body>
+</html>
