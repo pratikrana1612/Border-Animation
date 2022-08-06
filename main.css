@@ -12,7 +12,7 @@ body
     align-items: center;
     min-height:100vh; 
     background-color:#0c1022;
-    background: linear-gradient(to right,#00ccff,transparent,#d400d4);
+    /* background: linear-gradient(to right,#00ccff,transparent,#d400d4); */
 }
 .box
 {
